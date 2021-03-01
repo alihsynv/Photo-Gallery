@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(101px, 1fr));
+    grid-auto-rows: 101px;
+    grid-auto-flow: row dense;
+}
+.container div img{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.v{
+    grid-row: span 2;
+}
+.h{
+grid-column: span 2;
+}
+.b{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
